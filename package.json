@@ -1,0 +1,16 @@
+{
+  "name": "kisan-mandi-proxy",
+  "version": "1.0.0",
+  "description": "Server-side proxy for the Kisan Mandi app's Check Mandi Price screen. Calls the official data.gov.in mandi-price API and keeps the API key server-side only.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

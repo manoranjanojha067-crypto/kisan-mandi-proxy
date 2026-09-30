@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: kisan-mandi-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DATA_GOV_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: "*"
